@@ -4,6 +4,6 @@ from .models import *
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('title', 'descrioption', 'created_at', 'published',)
-    search_fields = ('title', 'descrioption')
+    list_display = ('title', 'description', 'created_at', 'published',)
+    search_fields = ('title', 'description')
     ordering = ('-created_at',)
